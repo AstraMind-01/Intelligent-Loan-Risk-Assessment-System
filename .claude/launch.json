@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ml-service",
+      "runtimeExecutable": "uvicorn",
+      "runtimeArgs": ["api.main:app", "--app-dir", "ml-service", "--host", "0.0.0.0", "--port", "8000"],
+      "port": 8000
+    }
+  ]
+}
