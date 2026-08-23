@@ -1,0 +1,15 @@
+# Generated at runtime / training time — never commit these.
+# Leading slash anchors to this file's directory (ml-service/), so this
+# doesn't also match legitimate source dirs like src/data/ or src/models/.
+/data/
+/models/
+/logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local environment
+.env
