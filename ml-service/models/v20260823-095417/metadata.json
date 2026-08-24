@@ -1,0 +1,1113 @@
+{
+  "version": "v20260823-095417",
+  "created_at": "2026-08-23T09:54:17.748394+00:00",
+  "algorithm": "xgboost",
+  "dataset_version": "ds-20260823-091422",
+  "dataset_rows": 307511,
+  "feature_count": 68,
+  "feature_names": [
+    "Age",
+    "Income",
+    "LoanAmount",
+    "CreditScore",
+    "MonthsEmployed",
+    "NumCreditLines",
+    "InterestRate",
+    "LoanTerm",
+    "DTIRatio",
+    "LoanToIncomeRatio",
+    "MonthlyInstalment",
+    "InstalmentToIncomeRatio",
+    "TotalDebtServiceRatio",
+    "CreditUtilizationProxy",
+    "EmploymentStabilityScore",
+    "CreditScoreBandOrdinal",
+    "AgeRiskBand",
+    "InterestBurden",
+    "CreditLinesPerYearOfAge",
+    "ThinFileScore",
+    "AlternateDataScore",
+    "CollateralSupportScore",
+    "HasBureauHistory",
+    "BureauLoanCount",
+    "BureauActiveLoanCount",
+    "BureauOverdueLoanCount",
+    "BureauDebtToCreditRatio",
+    "BureauAvgDaysSinceCredit",
+    "BureauBalanceDelinquencyRate",
+    "HasPriorApplications",
+    "PriorApplicationCount",
+    "PriorApprovalRate",
+    "PriorRefusalRate",
+    "InstallmentCount",
+    "InstallmentLatePaymentRate",
+    "InstallmentAvgDaysLate",
+    "InstallmentAvgPaymentRatio",
+    "PosAvgDaysPastDue",
+    "PosMaxDaysPastDue",
+    "CreditCardUtilizationRatio",
+    "CreditCardMaxDaysPastDue",
+    "Education_Bachelor's",
+    "Education_High School",
+    "Education_PhD",
+    "EmploymentType_Full-time",
+    "EmploymentType_Part-time",
+    "EmploymentType_Self-employed",
+    "EmploymentType_Unemployed",
+    "MaritalStatus_Divorced",
+    "MaritalStatus_Married",
+    "MaritalStatus_Single",
+    "MaritalStatus_None",
+    "HasMortgage_No",
+    "HasMortgage_Yes",
+    "HasDependents_No",
+    "HasDependents_Yes",
+    "LoanPurpose_Other",
+    "HasCoSigner_No",
+    "HasCoSigner_Yes",
+    "AgeGroup_18-25",
+    "AgeGroup_26-35",
+    "AgeGroup_36-50",
+    "AgeGroup_51-65",
+    "AgeGroup_65+",
+    "IncomeQuartileBand_high",
+    "IncomeQuartileBand_low",
+    "IncomeQuartileBand_lower-mid",
+    "IncomeQuartileBand_upper-mid"
+  ],
+  "hyperparameters": {
+    "colsample_bytree": 0.9332779646944658,
+    "gamma": 0.6934586140310883,
+    "learning_rate": 0.03521107376654919,
+    "max_depth": 4,
+    "min_child_weight": 4,
+    "n_estimators": 251,
+    "reg_alpha": 0.037379959535425375,
+    "reg_lambda": 1.0767255605253547,
+    "subsample": 0.8270801311279966
+  },
+  "thresholds": {
+    "low_cutoff": 0.025220297276973724,
+    "high_cutoff": 0.1229281798005104,
+    "decision_threshold": 0.1728639304637909
+  },
+  "metrics": {
+    "accuracy": 0.8489604786784313,
+    "balanced_accuracy": 0.6534294212610303,
+    "precision": 0.24556723678016631,
+    "recall": 0.4202470461868958,
+    "f1": 0.3099930672476973,
+    "roc_auc": 0.761966459976017,
+    "average_precision": 0.2388981898809132,
+    "brier_score": 0.0675539864898134,
+    "threshold": 0.1728639304637909,
+    "confusion_matrix": {
+      "true_negative": 37595,
+      "false_positive": 4808,
+      "false_negative": 2159,
+      "true_positive": 1565
+    },
+    "support": {
+      "n": 46127,
+      "positives": 3724,
+      "negatives": 42403
+    },
+    "curves": {
+      "roc": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0005659976888427705,
+          "y": 0.009398496240601503
+        },
+        {
+          "x": 0.0017451595405985425,
+          "y": 0.02389903329752954
+        },
+        {
+          "x": 0.002358323703511544,
+          "y": 0.033029001074113856
+        },
+        {
+          "x": 0.0023819069405466593,
+          "y": 0.033029001074113856
+        },
+        {
+          "x": 0.0027592387331085064,
+          "y": 0.03544575725026853
+        },
+        {
+          "x": 0.0027592387331085064,
+          "y": 0.03571428571428571
+        },
+        {
+          "x": 0.002782821970143622,
+          "y": 0.03571428571428571
+        },
+        {
+          "x": 0.0028535716812489683,
+          "y": 0.036519871106337275
+        },
+        {
+          "x": 0.006249557814305592,
+          "y": 0.06605800214822771
+        },
+        {
+          "x": 0.013371695398910454,
+          "y": 0.10767991407089152
+        },
+        {
+          "x": 0.014079192509963917,
+          "y": 0.11546723952738991
+        },
+        {
+          "x": 0.014079192509963917,
+          "y": 0.11573576799140708
+        },
+        {
+          "x": 0.014102775746999033,
+          "y": 0.11573576799140708
+        },
+        {
+          "x": 0.0172629295097045,
+          "y": 0.1307733619763695
+        },
+        {
+          "x": 0.01728651274673962,
+          "y": 0.1307733619763695
+        },
+        {
+          "x": 0.01728651274673962,
+          "y": 0.1310418904403867
+        },
+        {
+          "x": 0.017310095983774733,
+          "y": 0.1310418904403867
+        },
+        {
+          "x": 0.02098908096125274,
+          "y": 0.1423200859291085
+        },
+        {
+          "x": 0.02101266419828786,
+          "y": 0.1423200859291085
+        },
+        {
+          "x": 0.023677569983255903,
+          "y": 0.1549409237379162
+        },
+        {
+          "x": 0.023701153220291017,
+          "y": 0.1549409237379162
+        },
+        {
+          "x": 0.025847227790486524,
+          "y": 0.16648764769065522
+        },
+        {
+          "x": 0.030752541093790532,
+          "y": 0.1895810955961332
+        },
+        {
+          "x": 0.03112987288635238,
+          "y": 0.1909237379162191
+        },
+        {
+          "x": 0.031153456123387498,
+          "y": 0.1909237379162191
+        },
+        {
+          "x": 0.03523335613046247,
+          "y": 0.2083780880773362
+        },
+        {
+          "x": 0.039549088507888595,
+          "y": 0.22475832438238452
+        },
+        {
+          "x": 0.04129424804848714,
+          "y": 0.23254564983888293
+        },
+        {
+          "x": 0.04726080701837134,
+          "y": 0.25214822771213746
+        },
+        {
+          "x": 0.047284390255406455,
+          "y": 0.25214822771213746
+        },
+        {
+          "x": 0.05013796193665543,
+          "y": 0.25993555316863587
+        },
+        {
+          "x": 0.05016154517369054,
+          "y": 0.25993555316863587
+        },
+        {
+          "x": 0.05379336367709832,
+          "y": 0.27040816326530615
+        },
+        {
+          "x": 0.05379336367709832,
+          "y": 0.2709452201933405
+        },
+        {
+          "x": 0.055161191425135016,
+          "y": 0.2752416756176155
+        },
+        {
+          "x": 0.06060891918024668,
+          "y": 0.2921589688506982
+        },
+        {
+          "x": 0.06405207178737353,
+          "y": 0.30424274973147153
+        },
+        {
+          "x": 0.06412282149847888,
+          "y": 0.30424274973147153
+        },
+        {
+          "x": 0.11338820366483504,
+          "y": 0.4202470461868958
+        },
+        {
+          "x": 0.11341178690187015,
+          "y": 0.4202470461868958
+        },
+        {
+          "x": 0.11506261349432823,
+          "y": 0.4240064446831364
+        },
+        {
+          "x": 0.11508619673136335,
+          "y": 0.4240064446831364
+        },
+        {
+          "x": 0.13524986439638706,
+          "y": 0.46455424274973145
+        },
+        {
+          "x": 0.13527344763342217,
+          "y": 0.46455424274973145
+        },
+        {
+          "x": 0.1727472112822206,
+          "y": 0.5330290010741139
+        },
+        {
+          "x": 0.18722731882178148,
+          "y": 0.5561224489795918
+        },
+        {
+          "x": 0.1872509020588166,
+          "y": 0.5561224489795918
+        },
+        {
+          "x": 0.2135462113529703,
+          "y": 0.592373791621912
+        },
+        {
+          "x": 0.29582812536848807,
+          "y": 0.6914607948442535
+        },
+        {
+          "x": 0.373440558451053,
+          "y": 0.757250268528464
+        },
+        {
+          "x": 0.3784873711765677,
+          "y": 0.7599355531686359
+        },
+        {
+          "x": 0.37851095441360283,
+          "y": 0.7599355531686359
+        },
+        {
+          "x": 0.4486003348819659,
+          "y": 0.8128356605800214
+        },
+        {
+          "x": 0.4965214725373205,
+          "y": 0.841031149301826
+        },
+        {
+          "x": 0.4965686390113907,
+          "y": 0.841031149301826
+        },
+        {
+          "x": 0.5087611725585454,
+          "y": 0.8488184747583244
+        },
+        {
+          "x": 0.5789213027380138,
+          "y": 0.882921589688507
+        },
+        {
+          "x": 0.5798646322194184,
+          "y": 0.8831901181525241
+        },
+        {
+          "x": 0.6398839704737872,
+          "y": 0.9084317937701396
+        },
+        {
+          "x": 0.6408508831922269,
+          "y": 0.9084317937701396
+        },
+        {
+          "x": 0.640874466429262,
+          "y": 0.9084317937701396
+        },
+        {
+          "x": 0.6986062306912246,
+          "y": 0.9331364124597207
+        },
+        {
+          "x": 0.6986298139282598,
+          "y": 0.9331364124597207
+        },
+        {
+          "x": 0.7139353347640497,
+          "y": 0.9387755102040817
+        },
+        {
+          "x": 0.714006084475155,
+          "y": 0.9387755102040817
+        },
+        {
+          "x": 0.724830790274273,
+          "y": 0.942266380236305
+        },
+        {
+          "x": 0.8005093979199585,
+          "y": 0.9672395273899034
+        },
+        {
+          "x": 0.8707874442846025,
+          "y": 0.9822771213748658
+        },
+        {
+          "x": 0.9447208923896894,
+          "y": 0.9946294307196563
+        },
+        {
+          "x": 0.9881847982454072,
+          "y": 0.9991944146079484
+        },
+        {
+          "x": 0.9910147866896211,
+          "y": 0.9991944146079484
+        },
+        {
+          "x": 0.9910383699266562,
+          "y": 0.9991944146079484
+        },
+        {
+          "x": 0.998372756644577,
+          "y": 1.0
+        },
+        {
+          "x": 1.0,
+          "y": 1.0
+        }
+      ],
+      "precision_recall": [
+        {
+          "x": 1.0,
+          "y": 0.08073362672621241
+        },
+        {
+          "x": 1.0,
+          "y": 0.08085457466672456
+        },
+        {
+          "x": 0.9991944146079484,
+          "y": 0.08134400139909059
+        },
+        {
+          "x": 0.9991944146079484,
+          "y": 0.08134577968213716
+        },
+        {
+          "x": 0.9991944146079484,
+          "y": 0.08155973960502379
+        },
+        {
+          "x": 0.9946294307196563,
+          "y": 0.08463770765258323
+        },
+        {
+          "x": 0.9822771213748658,
+          "y": 0.09013848504262974
+        },
+        {
+          "x": 0.9672395273899034,
+          "y": 0.09593565226655303
+        },
+        {
+          "x": 0.942266380236305,
+          "y": 0.10247050578203482
+        },
+        {
+          "x": 0.9387755102040817,
+          "y": 0.1035177069761933
+        },
+        {
+          "x": 0.9387755102040817,
+          "y": 0.10352077226022327
+        },
+        {
+          "x": 0.9387755102040817,
+          "y": 0.10352383772579213
+        },
+        {
+          "x": 0.9387755102040817,
+          "y": 0.103526903372916
+        },
+        {
+          "x": 0.9331364124597207,
+          "y": 0.10498806610471616
+        },
+        {
+          "x": 0.9331364124597207,
+          "y": 0.10499123814127742
+        },
+        {
+          "x": 0.9084317937701396,
+          "y": 0.11070750703580078
+        },
+        {
+          "x": 0.9084317937701396,
+          "y": 0.11071113001930818
+        },
+        {
+          "x": 0.9084317937701396,
+          "y": 0.11085987678594836
+        },
+        {
+          "x": 0.8831901181525241,
+          "y": 0.11798256627327187
+        },
+        {
+          "x": 0.882921589688507,
+          "y": 0.11812041960051732
+        },
+        {
+          "x": 0.8488184747583244,
+          "y": 0.12779978976307915
+        },
+        {
+          "x": 0.841031149301826,
+          "y": 0.12948569538614188
+        },
+        {
+          "x": 0.841031149301826,
+          "y": 0.12949104891057178
+        },
+        {
+          "x": 0.841031149301826,
+          "y": 0.12949640287769784
+        },
+        {
+          "x": 0.8128356605800214,
+          "y": 0.1372851376479659
+        },
+        {
+          "x": 0.7599355531686359,
+          "y": 0.14989406779661016
+        },
+        {
+          "x": 0.7599355531686359,
+          "y": 0.14990200752158483
+        },
+        {
+          "x": 0.757250268528464,
+          "y": 0.15116590726346824
+        },
+        {
+          "x": 0.6914607948442535,
+          "y": 0.17031549705668364
+        },
+        {
+          "x": 0.592373791621912,
+          "y": 0.1958973448183998
+        },
+        {
+          "x": 0.5561224489795918,
+          "y": 0.20687244031565277
+        },
+        {
+          "x": 0.5561224489795918,
+          "y": 0.2068931068931069
+        },
+        {
+          "x": 0.5330290010741139,
+          "y": 0.21321160042964554
+        },
+        {
+          "x": 0.46455424274973145,
+          "y": 0.2317171175997857
+        },
+        {
+          "x": 0.46455424274973145,
+          "y": 0.231748158070998
+        },
+        {
+          "x": 0.4240064446831364,
+          "y": 0.2444650874748413
+        },
+        {
+          "x": 0.4240064446831364,
+          "y": 0.24450294208733353
+        },
+        {
+          "x": 0.4202470461868958,
+          "y": 0.2455287103859429
+        },
+        {
+          "x": 0.4202470461868958,
+          "y": 0.24556723678016631
+        },
+        {
+          "x": 0.30424274973147153,
+          "y": 0.29413291796469365
+        },
+        {
+          "x": 0.30424274973147153,
+          "y": 0.2942092962866788
+        },
+        {
+          "x": 0.30424274973147153,
+          "y": 0.29428571428571426
+        },
+        {
+          "x": 0.30424274973147153,
+          "y": 0.2943621719927254
+        },
+        {
+          "x": 0.2921589688506982,
+          "y": 0.2974302897758338
+        },
+        {
+          "x": 0.2752416756176155,
+          "y": 0.30469678953626633
+        },
+        {
+          "x": 0.2709452201933405,
+          "y": 0.3066869300911854
+        },
+        {
+          "x": 0.2706766917293233,
+          "y": 0.3064761325630891
+        },
+        {
+          "x": 0.27040816326530615,
+          "y": 0.30626520681265207
+        },
+        {
+          "x": 0.25993555316863587,
+          "y": 0.3127625201938611
+        },
+        {
+          "x": 0.25993555316863587,
+          "y": 0.31286360698125404
+        },
+        {
+          "x": 0.25214822771213746,
+          "y": 0.3189538043478261
+        },
+        {
+          "x": 0.25214822771213746,
+          "y": 0.31906218144750254
+        },
+        {
+          "x": 0.23254564983888293,
+          "y": 0.33091325945739397
+        },
+        {
+          "x": 0.22475832438238452,
+          "y": 0.3329355608591885
+        },
+        {
+          "x": 0.2083780880773362,
+          "y": 0.34185022026431716
+        },
+        {
+          "x": 0.1909237379162191,
+          "y": 0.3499015748031496
+        },
+        {
+          "x": 0.1909237379162191,
+          "y": 0.3500738552437223
+        },
+        {
+          "x": 0.1895810955961332,
+          "y": 0.35124378109452736
+        },
+        {
+          "x": 0.16648764769065522,
+          "y": 0.3613053613053613
+        },
+        {
+          "x": 0.1549409237379162,
+          "y": 0.3647281921618205
+        },
+        {
+          "x": 0.1549409237379162,
+          "y": 0.36495888678051863
+        },
+        {
+          "x": 0.1423200859291085,
+          "y": 0.3729767769176636
+        },
+        {
+          "x": 0.1423200859291085,
+          "y": 0.3732394366197183
+        },
+        {
+          "x": 0.1310418904403867,
+          "y": 0.3993453355155483
+        },
+        {
+          "x": 0.1310418904403867,
+          "y": 0.39967239967239965
+        },
+        {
+          "x": 0.1307733619763695,
+          "y": 0.39918032786885244
+        },
+        {
+          "x": 0.1307733619763695,
+          "y": 0.39950779327317476
+        },
+        {
+          "x": 0.11573576799140708,
+          "y": 0.41885325558794945
+        },
+        {
+          "x": 0.11573576799140708,
+          "y": 0.41926070038910507
+        },
+        {
+          "x": 0.11546723952738991,
+          "y": 0.4186952288218111
+        },
+        {
+          "x": 0.10767991407089152,
+          "y": 0.4142561983471074
+        },
+        {
+          "x": 0.06605800214822771,
+          "y": 0.48140900195694714
+        },
+        {
+          "x": 0.036519871106337275,
+          "y": 0.5291828793774319
+        },
+        {
+          "x": 0.03571428571428571,
+          "y": 0.5298804780876494
+        },
+        {
+          "x": 0.03571428571428571,
+          "y": 0.532
+        },
+        {
+          "x": 0.03544575725026853,
+          "y": 0.5301204819277109
+        },
+        {
+          "x": 0.033029001074113856,
+          "y": 0.5491071428571429
+        },
+        {
+          "x": 0.033029001074113856,
+          "y": 0.5515695067264574
+        },
+        {
+          "x": 0.02389903329752954,
+          "y": 0.5460122699386503
+        },
+        {
+          "x": 0.009398496240601503,
+          "y": 0.5932203389830508
+        },
+        {
+          "x": 0.0,
+          "y": 1.0
+        }
+      ]
+    },
+    "risk_bands": {
+      "low": {
+        "count": 8581,
+        "share": 0.1860298740434019,
+        "observed_default_rate": 0.01421745717282368
+      },
+      "medium": {
+        "count": 27536,
+        "share": 0.5969605653955384,
+        "observed_default_rate": 0.05559994189424753
+      },
+      "high": {
+        "count": 10010,
+        "share": 0.2170095605610597,
+        "observed_default_rate": 0.2068931068931069
+      }
+    },
+    "score_distribution": {
+      "mean": 43.37407487577283,
+      "p10": 13.54103151363467,
+      "p50": 40.11512200961863,
+      "p90": 76.42336549622364
+    }
+  },
+  "validation_metrics": {
+    "accuracy": 0.8465323996791467,
+    "balanced_accuracy": 0.6572526097536874,
+    "precision": 0.24463388643629166,
+    "recall": 0.4315252416756176,
+    "f1": 0.31225104439910617,
+    "roc_auc": 0.7645490080817043,
+    "average_precision": 0.24382771560125077,
+    "brier_score": 0.06729420579597736,
+    "threshold": 0.1728639304637909,
+    "confusion_matrix": {
+      "true_negative": 37441,
+      "false_positive": 4962,
+      "false_negative": 2117,
+      "true_positive": 1607
+    },
+    "support": {
+      "n": 46127,
+      "positives": 3724,
+      "negatives": 42403
+    },
+    "risk_bands": {
+      "low": {
+        "count": 8582,
+        "share": 0.18605155332018125,
+        "observed_default_rate": 0.01468189233278956
+      },
+      "medium": {
+        "count": 27409,
+        "share": 0.5942072972445639,
+        "observed_default_rate": 0.054471159108322086
+      },
+      "high": {
+        "count": 10136,
+        "share": 0.21974114943525483,
+        "observed_default_rate": 0.20767561168113655
+      }
+    },
+    "score_distribution": {
+      "mean": 43.46872272898306,
+      "p10": 13.54103151363467,
+      "p50": 40.11512200961863,
+      "p90": 76.42336549622364
+    }
+  },
+  "cv_results": {
+    "logistic_regression": {
+      "best_params": {
+        "C": 0.0060252157362038605
+      },
+      "search_best_auc": 0.7456499036140855,
+      "cv_roc_auc_mean": 0.7456499036140855,
+      "cv_roc_auc_std": 0.007299869898517093,
+      "cv_average_precision_mean": 0.21966875087049784,
+      "cv_f1_mean": 0.2575936692359147,
+      "n_folds": 5,
+      "tuning_seconds": 14.24,
+      "val_roc_auc": 0.7522674357824783,
+      "val_average_precision": 0.23536481460018738
+    },
+    "random_forest": {
+      "best_params": {
+        "max_depth": 11,
+        "max_features": 0.33384694741626014,
+        "min_samples_leaf": 97,
+        "n_estimators": 493
+      },
+      "search_best_auc": 0.7439926341115899,
+      "cv_roc_auc_mean": 0.7439926341115899,
+      "cv_roc_auc_std": 0.008268167160017227,
+      "cv_average_precision_mean": 0.2185443603070843,
+      "cv_f1_mean": 0.27378178584841517,
+      "n_folds": 5,
+      "tuning_seconds": 1752.56,
+      "val_roc_auc": 0.754295106544176,
+      "val_average_precision": 0.24059721789044214
+    },
+    "xgboost": {
+      "best_params": {
+        "colsample_bytree": 0.9332779646944658,
+        "gamma": 0.6934586140310883,
+        "learning_rate": 0.03521107376654919,
+        "max_depth": 4,
+        "min_child_weight": 4,
+        "n_estimators": 251,
+        "reg_alpha": 0.037379959535425375,
+        "reg_lambda": 1.0767255605253547,
+        "subsample": 0.8270801311279966
+      },
+      "search_best_auc": 0.7503600287640132,
+      "cv_roc_auc_mean": 0.7503600287640132,
+      "cv_roc_auc_std": 0.007272230714243912,
+      "cv_average_precision_mean": 0.23007265375405,
+      "cv_f1_mean": 0.26873457293633785,
+      "n_folds": 5,
+      "tuning_seconds": 281.27,
+      "val_roc_auc": 0.7626665414129115,
+      "val_average_precision": 0.24953398449915784
+    }
+  },
+  "baseline_comparison": {
+    "baseline_model": "logistic_regression",
+    "baseline_val_roc_auc": 0.7522674357824783,
+    "selected_model": "xgboost",
+    "selected_val_roc_auc": 0.7626665414129115,
+    "auc_lift_over_baseline": 0.010399105630433114,
+    "all_candidates": {
+      "logistic_regression": 0.7522674357824783,
+      "random_forest": 0.754295106544176,
+      "xgboost": 0.7626665414129115
+    }
+  },
+  "fairness": {
+    "generated_at": "2026-08-23T09:54:17.274665+00:00",
+    "n_applications": 46127,
+    "overall_approval_rate": 0.1860298740434019,
+    "overall_mean_risk_score": 43.37407487577283,
+    "thresholds": {
+      "disparate_impact_floor": 0.8,
+      "demographic_parity_tolerance": 0.1,
+      "approval_band": "risk score < 25"
+    },
+    "attributes": {
+      "AgeGroup": {
+        "attribute": "AgeGroup",
+        "available": true,
+        "groups": {
+          "18-25": {
+            "count": 1782,
+            "approval_rate": 0.045454545454545456,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.05083655083655084,
+            "observed_default_rate": 0.12794612794612795,
+            "defaulter_approval_rate": 0.008771929824561403
+          },
+          "26-35": {
+            "count": 10803,
+            "approval_rate": 0.10089789873183375,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.11080045562804183,
+            "observed_default_rate": 0.10608164398778117,
+            "defaulter_approval_rate": 0.017452006980802792
+          },
+          "36-50": {
+            "count": 17905,
+            "approval_rate": 0.18196034627199106,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.19516785042190252,
+            "observed_default_rate": 0.07997765987154426,
+            "defaulter_approval_rate": 0.030027932960893854
+          },
+          "51-65": {
+            "count": 14433,
+            "approval_rate": 0.25129910621492413,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.2636430678466077,
+            "observed_default_rate": 0.060486385366867595,
+            "defaulter_approval_rate": 0.05956471935853379
+          },
+          "65+": {
+            "count": 1204,
+            "approval_rate": 0.436046511627907,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.4486626402070751,
+            "observed_default_rate": 0.03737541528239203,
+            "defaulter_approval_rate": 0.1111111111111111
+          }
+        },
+        "approval_rates": {
+          "18-25": 0.045454545454545456,
+          "26-35": 0.10089789873183375,
+          "36-50": 0.18196034627199106,
+          "51-65": 0.25129910621492413,
+          "65+": 0.436046511627907
+        },
+        "most_favoured_group": "65+",
+        "least_favoured_group": "18-25",
+        "disparate_impact_ratio": 0.1042,
+        "demographic_parity_difference": 0.3906,
+        "equal_opportunity_gap": 0.3978,
+        "passes_four_fifths_rule": false,
+        "statistically_significant": true,
+        "bias_alert": true
+      },
+      "MaritalStatus": {
+        "attribute": "MaritalStatus",
+        "available": true,
+        "groups": {
+          "Divorced": {
+            "count": 5414,
+            "approval_rate": 0.222201699298116,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.2383046781287485,
+            "observed_default_rate": 0.07609900258588843,
+            "defaulter_approval_rate": 0.02669902912621359
+          },
+          "Married": {
+            "count": 33882,
+            "approval_rate": 0.1898057965881589,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.20301282051282052,
+            "observed_default_rate": 0.07915707455285993,
+            "defaulter_approval_rate": 0.03616703952274422
+          },
+          "Single": {
+            "count": 6831,
+            "approval_rate": 0.13863270385009516,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.15045960328979197,
+            "observed_default_rate": 0.0922266139657444,
+            "defaulter_approval_rate": 0.022222222222222223
+          }
+        },
+        "approval_rates": {
+          "Divorced": 0.222201699298116,
+          "Married": 0.1898057965881589,
+          "Single": 0.13863270385009516
+        },
+        "most_favoured_group": "Divorced",
+        "least_favoured_group": "Single",
+        "disparate_impact_ratio": 0.6239,
+        "demographic_parity_difference": 0.0836,
+        "equal_opportunity_gap": 0.0878,
+        "passes_four_fifths_rule": false,
+        "statistically_significant": true,
+        "bias_alert": true
+      },
+      "Education": {
+        "attribute": "Education",
+        "available": true,
+        "groups": {
+          "Bachelor's": {
+            "count": 12754,
+            "approval_rate": 0.3094715383409127,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.32266091572660915,
+            "observed_default_rate": 0.0547279284930218,
+            "defaulter_approval_rate": 0.08166189111747851
+          },
+          "High School": {
+            "count": 33342,
+            "approval_rate": 0.13853398116489712,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.15021275192136424,
+            "observed_default_rate": 0.0907264111331054,
+            "defaulter_approval_rate": 0.021487603305785124
+          },
+          "PhD": {
+            "count": 31,
+            "approval_rate": 0.4838709677419355,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.5,
+            "observed_default_rate": 0.03225806451612903,
+            "defaulter_approval_rate": 0.0
+          }
+        },
+        "approval_rates": {
+          "Bachelor's": 0.3094715383409127,
+          "High School": 0.13853398116489712,
+          "PhD": 0.4838709677419355
+        },
+        "most_favoured_group": "PhD",
+        "least_favoured_group": "High School",
+        "disparate_impact_ratio": 0.2863,
+        "demographic_parity_difference": 0.3453,
+        "equal_opportunity_gap": 0.3498,
+        "passes_four_fifths_rule": false,
+        "statistically_significant": true,
+        "bias_alert": true
+      },
+      "EmploymentType": {
+        "attribute": "EmploymentType",
+        "available": true,
+        "groups": {
+          "Full-time": {
+            "count": 37627,
+            "approval_rate": 0.1707018896005528,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.1842089951707686,
+            "observed_default_rate": 0.08645387620591596,
+            "defaulter_approval_rate": 0.027974177682139563
+          },
+          "Part-time": {
+            "count": 8490,
+            "approval_rate": 0.25394581861012955,
+            "sufficient_sample": true,
+            "true_negative_approval_rate": 0.2648635173875109,
+            "observed_default_rate": 0.05500588928150765,
+            "defaulter_approval_rate": 0.06638115631691649
+          },
+          "Self-employed": {
+            "count": 1,
+            "approval_rate": 0.0,
+            "sufficient_sample": false,
+            "true_negative_approval_rate": 0.0
+          },
+          "Unemployed": {
+            "count": 9,
+            "approval_rate": 0.2222222222222222,
+            "sufficient_sample": false,
+            "true_negative_approval_rate": 0.4,
+            "observed_default_rate": 0.4444444444444444,
+            "defaulter_approval_rate": 0.0
+          }
+        },
+        "approval_rates": {
+          "Full-time": 0.1707018896005528,
+          "Part-time": 0.25394581861012955
+        },
+        "most_favoured_group": "Part-time",
+        "least_favoured_group": "Full-time",
+        "disparate_impact_ratio": 0.6722,
+        "demographic_parity_difference": 0.0832,
+        "equal_opportunity_gap": 0.0807,
+        "passes_four_fifths_rule": false,
+        "statistically_significant": true,
+        "bias_alert": true
+      }
+    },
+    "bias_alert": true,
+    "alerts": [
+      "AgeGroup: approval rate for '18-25' is 4.5% vs 43.6% for '65+' (disparate impact ratio 0.10).",
+      "MaritalStatus: approval rate for 'Single' is 13.9% vs 22.2% for 'Divorced' (disparate impact ratio 0.62).",
+      "Education: approval rate for 'High School' is 13.9% vs 48.4% for 'PhD' (disparate impact ratio 0.29).",
+      "EmploymentType: approval rate for 'Full-time' is 17.1% vs 25.4% for 'Part-time' (disparate impact ratio 0.67)."
+    ],
+    "summary": "4 attribute(s) exceeded the fairness tolerance and require review.",
+    "risk_level_distribution": {
+      "low": 8581,
+      "medium": 27536,
+      "high": 10010
+    }
+  },
+  "training_reference": {
+    "imbalance_strategy": "class_weight",
+    "calibration": "isotonic (prefit on validation split)",
+    "train_rows": 215257,
+    "val_rows": 46127,
+    "test_rows": 46127,
+    "positive_rate": 0.08072881945686496,
+    "training_seconds": 2399.6,
+    "random_seed": 42
+  },
+  "notes": "Full tuning run on real Home Credit Default Risk dataset (application + bureau + previous_application + installments + POS + credit card)"
+}
